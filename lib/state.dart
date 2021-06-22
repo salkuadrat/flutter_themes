@@ -9,6 +9,10 @@ class ThemeState extends ChangeNotifier {
 
   MyTheme get theme => _theme;
 
+  ThemeState() {
+    init();
+  }
+
   Future<void> init() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String themeId = prefs.getString('THEME') ?? defaultTheme.id;

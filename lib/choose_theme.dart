@@ -29,13 +29,10 @@ class _ChooseThemePageState extends State<ChooseThemePage> {
             Center(
               child: Text(
                 state.theme.name, 
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: TextStyle(fontSize: 18),
               ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 15),
             SizedBox(
               height: 64,
               child: ListView.builder(
@@ -56,6 +53,7 @@ class _ChooseThemePageState extends State<ChooseThemePage> {
                 ),
               ),
             ),
+            SizedBox(height: 24),
             Spacer(),
           ],
         ),
